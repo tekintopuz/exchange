@@ -2,6 +2,7 @@
 This is a js-responsive widget for currency exchange widget. The widget
 is composed of a web user interface backed by an API.
 # How To Use
+Place this script in your html.
  `<script src="../static/js/exchange.js"></script>`
 
 ## API request interface
