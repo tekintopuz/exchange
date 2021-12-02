@@ -45,7 +45,7 @@ For performance and cost reasons exchange rates are to be cached. Please impleme
 Cache algorithm. For the purpose of the exercise use in memory storage.
 
 ## Exchange UI widget
-###Layout
+### Layout
 
 Rate section:
 * Base currency dropdown
