@@ -1,0 +1,131 @@
+
+    <head>
+        <title>Currency Exchange</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <style>
+            html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:0 0}a:active,a:hover{outline:0}small{font-size:80%}button,input,optgroup,select{color:inherit;font:inherit;margin:0}button{overflow:visible}button,select{text-transform:none}button{-webkit-appearance:button;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input{line-height:normal}optgroup{font-weight:700}*{-webkit-box-sizing:border-box;box-sizing:border-box}:after,:before{-webkit-box-sizing:border-box;box-sizing:border-box}html{font-size:10px;-webkit-tap-highlight-color:transparent}body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:14px;line-height:1.42857143;color:#333;background-color:#fff}button,input,select{font-family:inherit;font-size:inherit;line-height:inherit}a{color:#428bca;text-decoration:none}a:focus,a:hover{color:#2a6496;text-decoration:underline}a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-offset:-2px}h4{font-family:inherit;font-weight:500;line-height:1.1;color:inherit;margin-top:10px;margin-bottom:10px;font-size:18px}p{margin:0 0 12px;font-size:smaller;font-weight:700}small{font-size:85%}.text-center{text-align:center}.text-muted{color:#777}.form-control{display:block;width:100%;height:35px;padding:6px 12px;font-size:14px;line-height:1.42857143;color:#555;background-color:#fff;background-image:none;border:1px solid #bd9900;border-radius:4px;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);box-shadow:inset 0 1px 1px rgba(0,0,0,.075);-webkit-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;-o-transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;-webkit-transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s;transition:border-color ease-in-out .15s,box-shadow ease-in-out .15s,-webkit-box-shadow ease-in-out .15s}.form-control:focus{border-color:#66afe9;outline:0;-webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6);box-shadow:inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)}.form-control::-moz-placeholder{color:#777;opacity:1}.form-control:-ms-input-placeholder{color:#777}.form-control::-webkit-input-placeholder{color:#777}.form-group{margin-bottom:15px}.input-sm{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}select.input-sm{height:30px;line-height:30px}.input-group{position:relative;display:table;border-collapse:separate}.input-group .form-control{position:relative;z-index:2;float:left;width:100%;margin-bottom:0}.input-group{position:relative;display:table;border-collapse:separate}.input-group .form-control{position:relative;z-index:2;float:left;width:100%;margin-bottom:0}.input-group-sm>.form-control,.input-group-sm>.input-group-addon,.input-group-sm>.input-group-btn>.btn{height:30px;padding:5px 10px;font-size:12px;line-height:1.5;border-radius:3px}.input-group .form-control,.input-group-addon,.input-group-btn{display:table-cell}.input-group .form-control:not(:first-child):not(:last-child){border-radius:0}.input-group-addon,.input-group-btn{width:1%;white-space:nowrap;vertical-align:middle}.input-group-addon{padding:6px 12px;font-size:14px;font-weight:400;line-height:1;color:#555;text-align:center;background-color:#eee;border:1px solid #ccc;border-radius:4px}.input-group-addon:first-child{border-bottom-right-radius:0;border-top-right-radius:0;border-right:0}.input-group-btn:last-child>.btn{border-bottom-left-radius:0;border-top-left-radius:0}.input-group-btn{position:relative;font-size:0;white-space:nowrap}.input-group-btn>.btn{position:relative}.input-group-btn>.btn:active,.input-group-btn>.btn:focus,.input-group-btn>.btn:hover{z-index:2}.input-group-btn:last-child>.btn{margin-left:-1px}.panel{margin-bottom:20px;background-color:#fff;border:1px solid transparent;border-radius:4px;-webkit-box-shadow:0 1px 1px rgba(0,0,0,.05);box-shadow:0 1px 1px rgba(0,0,0,.05)}.panel-body{padding:10px}.panel-heading{padding:10px 15px;border-bottom:1px solid transparent;border-top-right-radius:3px;border-top-left-radius:3px;text-align:center;font-weight:700}.panel-title{font-weight:700;margin-top:0;margin-bottom:0;font-size:13px;color:inherit}.panel-title>a{color:inherit}.panel-footer{padding:10px 15px;background-color:#f5f5f5;border-top:1px solid #ddd;border-bottom-right-radius:3px;border-bottom-left-radius:3px}.panel-default{border-color:#ffd729}.panel-default>.panel-heading{color:#333;background-color:#ffd729;border-color:#ddd}.panel-primary{border-color:#428bca}.panel-primary>.panel-heading{color:#fff;background-color:#428bca;border-color:#428bca}.panel-success{border-color:#d6e9c6}.panel-success>.panel-heading{color:#3c763d;background-color:#dff0d8;border-color:#d6e9c6}.panel-info{border-color:#bce8f1}.panel-info>.panel-heading{color:#31708f;background-color:#d9edf7;border-color:#bce8f1}.panel-warning{border-color:#faebcc}.panel-warning>.panel-heading{color:#8a6d3b;background-color:#fcf8e3;border-color:#faebcc}.panel-danger{border-color:#ebccd1}.panel-danger>.panel-heading{color:#a94442;background-color:#f2dede;border-color:#ebccd1}.panel-body:after,.panel-body:before{content:" ";display:table}.panel-body:after{clear:both}.pull-right{float:right!important}small{font-size:.5em;font-weight:200;color:#999}.panel-title{white-space:nowrap;overflow:hidden;-o-text-overflow:ellipsis;text-overflow:ellipsis;min-width:0}.result{font-size:19px;font-weight:bolder}.datetime{font-size:.7em;padding-top:9px}.title-logo{font-size:.8em}
+        </style>
+    </head>
+    <body style="background-color:transparent">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4 class="panel-title title-logo">Exchange UI</h4>
+            </div>
+            <div id="exchange" class="panel-body">
+                <div class="form-group">
+                    <label for="baseCurrency">Base Currency</label>
+                    <select class="form-control input-sm currency-form" id="baseCurrency" name="baseCurrency">
+                        <option value="-1" selected>Base Currency</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="ILS">ILS</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="quoteCurrency">Quote Currency</label>
+                    <select class="form-control input-sm currency-form" id="quoteCurrency" name="quoteCurrency">
+                        <option value="-1" selected>Quote Currency</option>
+                        <option value="USD">USD</option>
+                        <option value="EUR">EUR</option>
+                        <option value="GBP">GBP</option>
+                        <option value="ILS">ILS</option>
+                    </select>
+
+                </div>
+                <div class="form-group">
+                    <label for="baseAmount">Base Amount</label>
+                    <div class="input-group input-group-sm">
+                        <div class="input-group-addon">cent</div>
+                        <input type="number" class="form-control" name="baseAmount" placeholder="Base Amount" id="baseAmount" step="0.01" value="100">
+                    </div>
+                </div>
+                <p class="text-center" id="results_section" style="visibility: hidden;">
+                    <span class="result" id="result-fit">0.883 <small>EUR</small></span>
+                </p>
+            </div>
+        </div>
+        <script>
+            class LRUCache{
+                constructor(capacity) {
+                    this.capacity = capacity;
+                    this.map = new Map();
+                }
+
+                get(key){
+                    let now = Date.now() / 1000; // get seconds
+                    if(this.map.has(key) &&  now - this.map.get(key).timestamp <= 86400){
+                        let val = this.map.get(key);
+                        this.map.delete(key);
+                        this.map.set(key, val);
+                        return val;
+                    }else{
+                        return -1;
+                    }
+                }
+
+                put(key, val){
+                    if(this.get(key) === -1 && this.capacity === this.map.size){
+                        for(let keyVal of this.map){
+                            this.map.delete(keyVal[0])
+                            break;
+                        }
+                        this.map.set(key, val);
+                    }
+                    else if(this.get(key) !== -1 && Date.now() - this.map.get(key).timestamp > 1000){
+                        this.map.delete(key);
+                        this.map.set(key, val);
+                    }
+                    else if(this.get(key) === -1 && this.map.size < this.capacity ){
+                        this.map.set(key, val);
+                    }
+
+                }
+            }
+        </script>
+        <script>
+            const baseCurrency = document.getElementById("baseCurrency");
+            const quoteCurrency = document.getElementById("quoteCurrency");
+            const baseAmount = document.getElementById("baseAmount");
+            const results_section = document.getElementById("results_section");
+            let cache = new LRUCache(3);
+            // function
+            async function calculate() {
+                // get the select options value
+                const baseCurrencyVal = baseCurrency.value;
+                const quoteCurrencyVal = quoteCurrency.value;
+                let key = baseCurrencyVal + "-" + quoteCurrencyVal
+                const baseAmountVal = baseAmount.value;
+                const json = await cache.get(key);
+                // fetch the data of selected
+                if (json !== -1) {
+                    console.log("Cache is working...");
+                    results_section.innerHTML = `<p>Exchange Rate =  ${json.exchangeRate.toFixed(4)}</p>`
+                    results_section.innerHTML += `<p>Quote Amount = ${(json.exchangeRate *baseAmountVal).toFixed(4)} </p>`
+                    results_section.style.visibility = 'visible';
+                } else if (baseCurrencyVal !== "-1" && quoteCurrencyVal !== "-1") {
+
+                    await fetch(`http://localhost:3000/quote?baseCurrency=${baseCurrencyVal}&quoteCurrency=${quoteCurrencyVal}&baseAmount=${baseAmountVal}`).then(response => response.json())
+                        .then(data => {
+                            if (data.quoteAmount != null) {
+                                results_section.innerHTML = `<p>Exchange Rate =  ${data.exchangeRate.toFixed(4)}</p>`
+                                results_section.innerHTML += `<p>Quote Amount = ${data.quoteAmount.toFixed(4)} </p>`
+                                results_section.style.visibility = 'visible';
+                                cache.put(key, data);
+                            }
+                        });
+                }
+            }
+            // Event listeners
+            baseCurrency.addEventListener("change", calculate);
+            quoteCurrency.addEventListener("change", calculate);
+            baseAmount.addEventListener("input", calculate);
+            // calculate on page load
+            calculate();
+        </script>
+    </body>
+</html>
