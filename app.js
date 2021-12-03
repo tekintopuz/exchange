@@ -19,7 +19,7 @@ app.get('/quote', function (req, res) {
     let exchange_api_url = "https://api.exchangerate-api.com/v4/latest/" + req.query.baseCurrency
 
     axios.get(exchange_api_url).then(response => {
-        console.log(response.data);
+        //console.log(response.data);
         let exchangeRate =   response.data.rates[req.query.quoteCurrency] /  response.data.rates[req.query.baseCurrency];
         let quoteAmount = exchangeRate * req.query.baseAmount;
         res.json({

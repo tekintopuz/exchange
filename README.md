@@ -1,6 +1,21 @@
 # **Currency exchange**
 This is a js-responsive widget for currency exchange widget. The widget
 is composed of a web user interface backed by an API.
+
+# Installation
+
+You need to write the following commands on the terminal screen so that you can run the project locally.
+
+```sh
+1. https://github.com/tekintopuz/exchange.git
+2. cd exchange
+3. npm install
+4. npm start
+```
+
+The application is running on [localhost](http://localhost:3000).
+
+Sample usage on [localhost](http://localhost:3000/exchange).
 # How To Use
 Place this script in your html.
  `<script src="../static/js/exchange.js"></script>`
