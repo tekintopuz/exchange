@@ -15,7 +15,7 @@ You need to write the following commands on the terminal screen so that you can 
 
 The application is running on [localhost](http://localhost:3000).
 
-Sample usage on [localhost](http://localhost:3000/exchange).
+Base usage on [localhost](http://localhost:3000/exchange).
 # How To Use
 Place this script in your html.
  `<script src="../static/js/exchange.js"></script>`
